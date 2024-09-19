@@ -71,7 +71,7 @@ $ catkin_make
 | $\Omega_{m}^{car}$                           | $2.5rad/s^2$      | Angular acceleration limit               |
 | $-$                                          | $0.2m$            | IRIS grid size                           |
 | $\Delta{t}$                                  | $0.15s$           | Time between control inputs              |
-| $\mathbf{W}$                                 | $[2, 0; 0, 1]$ | Weights for cost function (\ref{cost_function}) |
+| $\mathbf{W}$                                 | $[2, 0; 0, 1]$ | Weights for cost function |
 | $l^{max}_i$                                  | $2.0m$            | Original sheet's side length             |
 | $z_r$                                        | $1.5m$            | Height of each contact point             |
 ## Test in Rviz
