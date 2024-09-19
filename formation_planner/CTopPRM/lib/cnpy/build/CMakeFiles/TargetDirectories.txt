@@ -1,0 +1,9 @@
+/home/weijian/CTopPRM/lib/cnpy/build/CMakeFiles/install/strip.dir
+/home/weijian/CTopPRM/lib/cnpy/build/CMakeFiles/edit_cache.dir
+/home/weijian/CTopPRM/lib/cnpy/build/CMakeFiles/install/local.dir
+/home/weijian/CTopPRM/lib/cnpy/build/CMakeFiles/example1.dir
+/home/weijian/CTopPRM/lib/cnpy/build/CMakeFiles/cnpy-static.dir
+/home/weijian/CTopPRM/lib/cnpy/build/CMakeFiles/install.dir
+/home/weijian/CTopPRM/lib/cnpy/build/CMakeFiles/list_install_components.dir
+/home/weijian/CTopPRM/lib/cnpy/build/CMakeFiles/rebuild_cache.dir
+/home/weijian/CTopPRM/lib/cnpy/build/CMakeFiles/cnpy.dir

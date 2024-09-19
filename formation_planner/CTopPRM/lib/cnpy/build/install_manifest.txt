@@ -1,0 +1,6 @@
+/home/weijian/CTopPRM/lib/cnpy/install/lib/libcnpy.so
+/home/weijian/CTopPRM/lib/cnpy/install/lib/libcnpy.a
+/home/weijian/CTopPRM/lib/cnpy/install/include/cnpy.h
+/home/weijian/CTopPRM/lib/cnpy/install/bin/mat2npz
+/home/weijian/CTopPRM/lib/cnpy/install/bin/npy2mat
+/home/weijian/CTopPRM/lib/cnpy/install/bin/npz2mat
