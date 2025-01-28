@@ -23,7 +23,7 @@ objects using a deformable sheet in unstructured, cluttered environments.
 
 ## Features
 
- - A heuristic path exploration method which efficiently evaluates a set of homotopically distinct solution spaces for the formation.
+ - A heuristic path exploration method that efficiently evaluates a set of homotopically distinct solution spaces for the formation.
  
  - A two-stage iterative motion planning framework for finding locally time-optimal collision-free formation trajectories using a deformable sheet.
 
@@ -31,7 +31,7 @@ objects using a deformable sheet in unstructured, cluttered environments.
 
  - ROS Noetic or later
  - Ubuntu 20.04 or later
- - You'll also need a license for the Mosek optimization toolbox <https://www.mosek.com/> (this package includes a downloader for the Mosek code, but you have to get your own license). Mosek has free licenses available for academic use.
+ - You'll also need a license for the Mosek optimization toolbox <https://www.mosek.com/> (this package includes a downloader for the Mosek code, but you have to get your own license). Mosek has free licenses available for academic use. Please remember to change the path of your license in _CMakeLists.txt_ in the package __formation_planner__.
 
 ## Installation
 
