@@ -160,7 +160,7 @@ find_library(IRIS_LIB iris HINTS ${PROJECT_SOURCE_DIR}/lib/iris)
 find_library(IRIS_GEOMETRY_LIB iris_geometry HINTS ${PROJECT_SOURCE_DIR}/lib/iris)
 find_library(IRIS_CVXGEN_LDP_CPP_LIB NAMES iris_cvxgen_ldp_cpp HINTS ${PROJECT_SOURCE_DIR}/lib/iris)
 find_library(IRIS_CVXGEN_LDP_LIB iris_cvxgen_ldp HINTS ${PROJECT_SOURCE_DIR}/lib/iris)
-# Change the path to your mosek licence
+# Change the path to your mosek license
 find_library(MOSEK_LIB NAMES mosek64 HINTS "/home/weijian/mosek/7/tools/platform/linux64x86/bin")
 
 # Declare a C++ library
@@ -200,13 +200,13 @@ add_library(formation_test
 add_library(dynamic_lines_mover SHARED src/formation_planning/dynamic_lines_mover.cpp)
 target_link_libraries(dynamic_lines_mover ${GAZEBO_LIBRARIES} ${catkin_LIBRARIES})
 target_include_directories(formation_planner PUBLIC ${PROJECT_SOURCE_DIR}lib/iris)
-# Change the path to your mosek licence
+# Change the path to your mosek license
 target_include_directories(formation_planner PUBLIC "/home/weijian/mosek/7/tools/platform/linux64x86/bin")
 target_link_libraries(formation_planner ${catkin_LIBRARIES} ${OMPL_LIBRARIES} ipopt adolc ${IRIS_LIB} ${IRIS_GEOMETRY_LIB} ${MOSEK_LIB} ${IRIS_CVXGEN_LDP_CPP_LIB})
 target_link_libraries(formation_planner /usr/local/lib/libyaml-cpp.so.0.8)
 
 target_include_directories(formation_test PUBLIC ${PROJECT_SOURCE_DIR}lib/iris)
-# Change the path to your mosek licence
+# Change the path to your mosek license
 target_include_directories(formation_test PUBLIC "/home/weijian/mosek/7/tools/platform/linux64x86/bin")
 target_link_libraries(formation_test ${catkin_LIBRARIES} ${OMPL_LIBRARIES} ipopt adolc ${IRIS_LIB} ${IRIS_GEOMETRY_LIB} ${MOSEK_LIB} ${IRIS_CVXGEN_LDP_CPP_LIB})
 target_link_libraries(formation_test /usr/local/lib/libyaml-cpp.so.0.8)
