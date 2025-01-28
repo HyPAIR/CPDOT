@@ -1,0 +1,8 @@
+<launch>
+    <arg name="use_map_sim" default="true"/>
+    <arg name="gui" default="true"/>
+    <include file="$(find match_gazebo)/launch/match_world_common.launch" pass_all_args="true">
+        <arg name="world_name" value="big_square"/>
+        <arg name="use_map_sim" value="$(arg use_map_sim)"/>
+    </include>
+</launch>
