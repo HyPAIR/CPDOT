@@ -108,7 +108,7 @@ Launch the control node:
 
 ## Video
 
-A simulation and real-world experiments video demonstrating our proposed framework can be found at [youtube](https://youtu.be/7gs06rqIHbM).
+A simulation and real-world experiments video demonstrating our proposed framework can be found at [youtube](https://www.youtube.com/watch?v=DvEniLKDaH0&t=2s).
 <!-- ## Citation
 
 If you find this work useful, please cite [A decoupled solution to heterogeneous multi-formation planning and coordination for object transportation](https://www.sciencedirect.com/science/article/pii/S092188902400157X) ([pdf](http://SimonZhang1999.github.io/files/ras_2024.pdf)):
