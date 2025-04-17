@@ -1,0 +1,7 @@
+<library path="lib/libformation_planner">
+    <class name ="formation_planner/FormationPlannerROS" type="formation_planner::FormationPlannerROS" base_class_type= "nav_core::BaseGlobalPlanner">
+        <description>
+            Local planner based on CPDOT 
+        </description>
+    </class>
+</library>
