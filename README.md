@@ -55,14 +55,15 @@ $ git clone git@github.com:HyPAIR/CPDOT.git
 
 3. Install dependencies:
 ```shell
-$ rosdep install formation_planner
+$ cd ~/CPDOT
+$ rosdep install --from-paths src --ignore-src -r -y
 ```
 
-4. Build the workspace:
+4. Build the workspace (Set MOSEK_DIR to the root path of your MOSEK installation (e.g., /home/yourname/mosek/7):
 
 ```shell
-$ cd ~/CPDOT
-$ catkin_make
+
+$ catkin_make --cmake-args -DMOSEK_DIR=/home/weijian/mosek/7
 ```
 
 ## Parameter values in the simluation
