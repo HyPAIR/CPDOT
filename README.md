@@ -1,7 +1,6 @@
-# [ICRA2025] Multi-Nonhonolomic Robot Object Transportation with Obstacle Crossing using a Deformable Sheet
+# [ICRA2025] Multi-Nonholonomic Robot Object Transportation with Obstacle Crossing using a Deformable Sheet
 
-We address multi-robot formation planning where nonholonomic robots collaboratively transport
-objects using a deformable sheet in unstructured, cluttered environments.
+We address multi-robot formation planning where nonholonomic robots collaboratively transport objects using a deformable sheet in unstructured, cluttered environments.
 <!-- <table style="width:100%; text-align:center;">
   <tr>
     <td><img src="https://github.com/HyPAIR/Heterogeneous-formation-controller/blob/main/Figures/gazebo1%20(1).png" alt="Image 1" width="352" height="200"></td>
@@ -35,7 +34,7 @@ objects using a deformable sheet in unstructured, cluttered environments.
 
  - ROS Noetic or later
  - Ubuntu 20.04 or later
- - You'll also need a license for the Mosek optimization toolbox <https://www.mosek.com/> (this package includes a downloader for the Mosek code, but you have to get your own license). Mosek has free licenses available for academic use. Please remember to change the path of your license in _CMakeLists.txt_ in the package __formation_planner__.
+ - You'll also need a license for the Mosek optimization toolbox <https://www.mosek.com/> (this package includes a downloader for the Mosek code, but you have to get your own license). Mosek has free licenses available for academic use.
 
 ## Installation
 
@@ -59,14 +58,14 @@ $ cd ~/CPDOT
 $ rosdep install --from-paths src --ignore-src -r -y
 ```
 
-4. Build the workspace (Set MOSEK_DIR to the root path of your MOSEK installation (e.g., /home/yourname/mosek/7):
+4. Build the workspace (Set MOSEK_DIR to the root path of your __MOSEK license__ (e.g., _/home/yourname/mosek/7_):
 
 ```shell
 
 $ catkin_make --cmake-args -DMOSEK_DIR=/home/yourname/mosek/7
 ```
 
-## Parameter values in the simluation
+## Parameter values in the simulation
 | **Parameter**                                | **Value**         | **Description**                          |
 |----------------------------------------------|-------------------|------------------------------------------|
 | $L$                                          | $0.65m$           | Car-like robot wheelbase                 |
@@ -89,7 +88,7 @@ $ catkin_make --cmake-args -DMOSEK_DIR=/home/yourname/mosek/7
 
 ## Test in Rviz
 
-Launch the simulation to trajectory optimisation result (4 robots in a simple scenario):
+Launch the simulation to the trajectory optimisation result (4 robots in a simple scenario):
 
   ```shell
   $ roslaunch formation_planner topological_test.launch
@@ -101,7 +100,7 @@ Launch the simulation to trajectory optimisation result (4 robots in a simple sc
 
 ## Test in Gazebo
 
-Launch multi-robot transportation simulation, with 4 car-like robots in 100 random obstacle environments.
+Launch a multi-robot transportation simulation, with 4 car-like robots in 100 random obstacle environments.
 
   ```shell
   $ roslaunch formation_planner heterogeneous_triangle.launch
