@@ -63,7 +63,7 @@ $ rosdep install --from-paths src --ignore-src -r -y
 
 ```shell
 
-$ catkin_make --cmake-args -DMOSEK_DIR=/home/weijian/mosek/7
+$ catkin_make --cmake-args -DMOSEK_DIR=/home/yourname/mosek/7
 ```
 
 ## Parameter values in the simluation
