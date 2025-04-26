@@ -34,7 +34,7 @@ We address multi-robot formation planning where nonholonomic robots collaborativ
 
  - ROS Noetic or later
  - Ubuntu 20.04 or later
- - Yaml-cpp 0.8.0 or later
+ - yaml-cpp 0.8.0 or later
  - You'll also need a license for the Mosek optimization toolbox <https://www.mosek.com/> (this package includes a downloader for the Mosek code, but you have to get your own license). Mosek has free licenses available for academic use.
 
 ## Installation
@@ -101,7 +101,13 @@ Launch the simulation to the trajectory optimisation result (4 robots in a simpl
 
 ## Test in Gazebo
 
-Launch a multi-robot transportation simulation, with 4 car-like robots in 100 random obstacle environments.
+Create a world file with 5 car-like robots in 100 random obstacle environments.
+
+  ```shell
+  $ roslaunch formation_planner write_obs_to_world.launch
+  ```
+
+Launch a multi-robot transportation simulation, with 5 car-like robots in 100 random obstacle environments.
 
   ```shell
   $ roslaunch formation_planner heterogeneous_triangle.launch
