@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="formation_planner" type="irisDemo" name="irisDemo" output="screen" />
+</launch>

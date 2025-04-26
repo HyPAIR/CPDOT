@@ -1,0 +1,130 @@
+<launch>
+  <!-- <arg name="x_car1" default="-12"/>
+  <arg name="y_car1" default="-10"/>
+  <arg name="z_car1" default="0"/> -->
+  <arg name="x_car1" default="-27.661731409782014"/>
+  <arg name="y_car1" default="-30"/>
+  <arg name="z_car1" default="0"/>
+  <arg name="roll_car1" default="0"/>
+  <arg name="pitch_car1" default="0"/>
+  <arg name="yaw_car1" default="0.78539816339744828"/>
+  <arg name="x_car2" default="-31.169134295108993"/>
+  <arg name="y_car2" default="-27.975000000000001"/>
+  <arg name="z_car2" default="0"/>
+  <arg name="roll_car2" default="0"/>
+  <arg name="pitch_car2" default="0"/>
+  <arg name="yaw_car2" default="0.78539816339744828"/>
+  <arg name="x_diff1" default="-31.169134295108993"/>
+  <arg name="y_diff1" default="-32.024999999999999"/>
+  <arg name="yaw_diff1" default="0.78539816339744828"/>
+  <arg name="robot1_name"  default="mir1"/>
+  <arg name="robot2_name"  default="mir2"/>
+  <arg name="robot3_name"  default="mir3"/>
+  <arg name="robot4_name"  default="mir4"/>
+  <arg name="robot5_name"  default="mir5"/>
+
+  <!-- <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+  <arg name="x_pos" default="-5.25"/>
+  <arg name="y_pos" default="-1.5"/>
+  <arg name="YAW" default="0"/>
+
+  <arg name="model1" default="$(env TURTLEBOT3_MODEL)" doc="model1 type [burger, waffle, waffle_pi]"/>
+  <arg name="x_pos1" default="-6.45"/>
+  <arg name="y_pos1" default="-1.5"/>
+  <arg name="YAW1" default="0"/> -->
+
+  <arg name="namespace" default="/"/>
+  <arg name="cmd_timeout" default="0.5"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find formation_planner)/gazebo/worlds/icra_world.world"/>    
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="true"/>
+  </include>
+  <group ns="$(arg robot1_name)">
+    <include file="$(find mir_launch_sim)/launch/mir_100.launch">
+        <arg name="robot_x"     default="-27.661731409782014" />
+        <arg name="robot_y"     default="-30" />
+        <!-- <arg name="robot_x"     default="-27.661731409782014" /> -->
+        <!-- <arg name="robot_y"     default="-30" /> -->
+        <arg name="robot_yaw"   default="0.78539816339744828" /> 
+        <arg name="tf_prefix"   default="$(arg robot1_name)" />       
+        <arg name="model_name"  default="$(arg robot1_name)"/>
+    </include>
+  </group>
+  <group ns="$(arg robot2_name)">
+    <include file="$(find mir_launch_sim)/launch/mir_100.launch">
+        <arg name="robot_x"     default="-29.277435268209494" />
+        <arg name="robot_y"     default="-27.776174420424905" />
+        <!-- <arg name="robot_x"     default="-30" /> -->
+        <!-- <arg name="robot_y"     default="-27.661731409782014" /> -->
+        <arg name="robot_yaw"   default="0.78539816339744828" /> 
+        <arg name="tf_prefix"   default="$(arg robot2_name)" />       
+        <arg name="model_name"  default="$(arg robot2_name)"/>
+    </include>
+  </group>
+  <group ns="$(arg robot3_name)">
+    <include file="$(find mir_launch_sim)/launch/mir_100.launch">
+        <arg name="robot_x"     default="-31.891699026899499" />
+        <arg name="robot_y"     default="-28.625600206771157" />
+        <!-- <arg name="robot_x"     default="-32.338268590217986" /> -->
+        <!-- <arg name="robot_y"     default="-30" /> -->
+        <arg name="robot_yaw"   default="0.78539816339744828" /> 
+        <arg name="tf_prefix"   default="$(arg robot3_name)" />       
+        <arg name="model_name"  default="$(arg robot3_name)"/>
+    </include>
+  </group>
+  <group ns="$(arg robot4_name)">
+    <include file="$(find mir_launch_sim)/launch/mir_100.launch">
+        <arg name="robot_x"     default="-31.891699026899499" />
+        <arg name="robot_y"     default="-31.374399793228843" />
+        <!-- <arg name="robot_x"     default="-30" /> -->
+        <!-- <arg name="robot_y"     default="-32.338268590217986" /> -->
+        <arg name="robot_yaw"   default="0.78539816339744828" /> 
+        <arg name="tf_prefix"   default="$(arg robot4_name)" />       
+        <arg name="model_name"  default="$(arg robot4_name)"/>
+    </include>
+  </group>
+  <group ns="$(arg robot5_name)">
+    <include file="$(find mir_launch_sim)/launch/mir_100.launch">
+        <arg name="robot_x"     default="-29.277435268209494" />
+        <arg name="robot_y"     default="-32.223825579575099" />
+        <arg name="robot_yaw"   default="0.78539816339744828" /> 
+        <arg name="tf_prefix"   default="$(arg robot5_name)" />       
+        <arg name="model_name"  default="$(arg robot5_name)"/>
+    </include>
+  </group>
+  <!-- <include file="$(find racebot_control)/launch/racebot_control.launch"/> -->
+  <!-- <node pkg="rviz" type="rviz" name="rviz" args="" />  -->
+  <!--car-like robot 1-->
+  <!-- <include file="$(find hunter2_control)/launch/hunter2_contol.launch" ns="/"/> -->
+
+  <!-- urdf xml robot description loaded on the Parameter Server, converting the xacro into a proper urdf file-->
+  <!-- <param name="robot_description" command="$(find xacro)/xacro '$(find hunter2_gazebo)/xacro/hunter2_base.xacro'" /> -->
+  <!-- <group ns = "hunter2_base1">
+    <include file="$(find hunter2_control)/launch/hunter2_v_contol.launch" />
+    <param name="robot_description" command="$(find xacro)/xacro '$(find hunter2_base)/urdf/hunter2_base_gazebo.xacro' bodyframe:=hunter2_base1 ns:=hunter2_base1" />
+    <node name="hunter_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" 
+    args="-urdf -param robot_description -model hunter2_base1 -x $(arg x_car1) -y $(arg y_car1) -z 1.5 -R $(arg roll_car1) -P $(arg pitch_car1) -Y $(arg yaw_car1)"
+        respawn="false" />
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" >
+        <param name="publish_frequency" value="10.0"/>
+        <param name="tf_prefix" value="hunter2_base1"/>
+    </node>
+  </group>
+
+  <group ns = "hunter2_base2">
+    <include file="$(find hunter2_control)/launch/hunter2_v_contol.launch" />
+    <param name="robot_description" command="$(find xacro)/xacro '$(find hunter2_base)/urdf/hunter2_base_gazebo.xacro' bodyframe:=hunter2_base2 ns:=hunter2_base2" />
+    <node name="hunter_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" 
+    args="-urdf -param robot_description -model hunter2_base2 -x $(arg x_car2) -y $(arg y_car2) -z 1.5 -R $(arg roll_car2) -P $(arg pitch_car2) -Y $(arg yaw_car2)"
+        respawn="false" />
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" >
+        <param name="publish_frequency" value="10.0"/>
+        <param name="tf_prefix" value="hunter2_base2"/>
+    </node>
+  </group> -->
+</launch>

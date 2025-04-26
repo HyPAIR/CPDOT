@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "versi5on": "0.2.0",
+    "configurations": [
+
+        
+        {
+            "name": "ROS: Launch",
+            "request": "launch",
+            // "target": "/home/weijian//cpdot/src/CPDOT/formation_planner/launch/topological_test.launch",
+            // "target": "/home/weijian/cpdot/src/CPDOT/src/formation_planner/launch/flexble_formation.launch",
+            // "target": "/home/weijian/cpdot/src/CPDOT/formation_planner/launch/write_obs_to_world.launch",
+            // "target": "/home/weijian/CPDOT/src/formation_planner/launch/demo_fk_test.launch",
+            // "target": "/home/weijian/CPDOT/src/formation_planner/launch/test_iris.launch",
+            // "target": "/home/weijian/CPDOT/src/formation_planner/launch/topo_test.launch",
+            // "target": "/home/weijian/CPDOT/src/formation_planner/launch/demo_test.launch",
+            // "target": "/home/weijian/CPDOT/src/formation_planner/launch/traj_tracking/control_rectangle_formation.launch",
+            "target": "/home/weijian/cpdot/src/CPDOT/formation_planner/launch/traj_tracking/control_triangular_formation.launch",
+            "type": "ros",
+        }
+    ]
+
+}
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "/home/weijian/CPDOT/src/formation_planner/src/formation_planning/visualization.py",
+//             "type": "python",
+//             "request": "launch",
+//             "program": "${file}",
+//             "console": "integratedTerminal"
+//         }
+//     ]
+// }

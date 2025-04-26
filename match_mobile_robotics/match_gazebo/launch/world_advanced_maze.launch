@@ -1,0 +1,7 @@
+<launch>
+    <arg name="use_map_sim" default="true"/>
+    <include file="$(find match_gazebo)/launch/match_world_common.launch" pass_all_args="true">
+        <arg name="world_name" value="advanced_maze"/>
+        <arg name="use_map_sim" value="true"/>
+    </include>
+</launch>

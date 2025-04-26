@@ -1,0 +1,18 @@
+<launch>
+    <arg name="paused" default="false"/>
+    <arg name="gazebo_gui" default="true" />
+    <arg name="world_name" />
+    <arg name="map_name" />
+    <arg name="use_map_sim" default="true"/>
+
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="paused" value="$(arg paused)"/>
+        <arg name="gui" value="$(arg gazebo_gui)"/>
+        <arg name="world_name" value="$(arg world_name)"/>
+    </include>
+
+    <node if="$(arg use_map_sim)" name="static_map_server" pkg="map_server" type="map_server" args="$(arg map_name)" output="screen">
+        <param name="frame_id" type="string" value="map"/>
+    </node>
+    
+</launch>
