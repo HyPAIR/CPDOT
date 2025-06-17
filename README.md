@@ -1,4 +1,4 @@
-# [ICRA2025] Multi-Nonholonomic Robot Object Transportation with Obstacle Crossing using a Deformable Sheet
+# [ICRA 2025] Multi-Nonholonomic Robot Object Transportation with Obstacle Crossing using a Deformable Sheet
 
 We address multi-robot formation planning where nonholonomic robots collaboratively transport objects using a deformable sheet in unstructured, cluttered environments.
 <!-- <table style="width:100%; text-align:center;">
