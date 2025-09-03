@@ -130,7 +130,7 @@ A simulation and real-world experiments video demonstrating our proposed framewo
 
 ### Citation
 
-If you find this work useful, please cite ([paper](https://research.birmingham.ac.uk/en/publications/multi-nonholonomic-robot-object-transportation-with-obstacle-cros)):
+If you find this work useful, please cite ([paper](https://ieeexplore.ieee.org/document/11128313)):
 
 ```bibtex
 @inproceedings{zhang2025multi,
