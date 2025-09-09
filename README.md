@@ -133,11 +133,14 @@ A simulation and real-world experiments video demonstrating our proposed framewo
 If you find this work useful, please cite ([paper](https://ieeexplore.ieee.org/document/11128313)):
 
 ```bibtex
-@inproceedings{zhang2025multi,
-  title={Multi-Nonholonomic Robot Object Transportation with Obstacle Crossing using a Deformable Sheet},
+@INPROCEEDINGS{11128313,
   author={Zhang, Weijian and Street, Charlie and Mansouri, Masoumeh},
-  booktitle={2025 IEEE International Conference on Robotics and Automation},
+  booktitle={2025 IEEE International Conference on Robotics and Automation (ICRA)}, 
+  title={Multi-Nonholonomic Robot Object Transportation with Obstacle Crossing Using a Deformable Sheet}, 
   year={2025},
-  organization={IEEE}
-}
+  volume={},
+  number={},
+  pages={7349-7355},
+  keywords={Limiting;Navigation;Transportation;Probabilistic logic;Hardware;Planning;Iterative methods;Robots;Trajectory optimization;Contracts},
+  doi={10.1109/ICRA55743.2025.11128313}}
 ```
