@@ -1,4 +1,13 @@
-# [ICRA 2025] Multi-Nonholonomic Robot Object Transportation with Obstacle Crossing using a Deformable Sheet
+<div align ="center">
+<h3> ICRA 2025: Multi-Nonholonomic Robot Object Transportation with Obstacle Crossing using a Deformable Sheet </h3>
+
+Weijian Zhang, Charlie Street, Masoumeh Mansouri
+
+University of Birmingham
+
+<a href="https://ieeexplore.ieee.org/document/11128313"><img alt="Paper" src="https://img.shields.io/badge/Paper-IEEE%20Xplore-pink"/></a>
+<a href="https://www.youtube.com/watch?v=xORb4H-AyNw"><img alt="Video" src="https://img.shields.io/badge/Video-Youtube-red"/></a>
+</div>
 
 We address multi-robot formation planning where nonholonomic robots collaboratively transport objects using a deformable sheet in unstructured, cluttered environments.
 <!-- <table style="width:100%; text-align:center;">
