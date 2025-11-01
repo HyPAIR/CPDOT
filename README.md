@@ -10,6 +10,7 @@ University of Birmingham
 </div>
 
 We address multi-robot formation planning where nonholonomic robots collaboratively transport objects using a deformable sheet in unstructured, cluttered environments.
+Our paper has been selected as a <span style="color:red">**the Best Conference Paper Award Finalist & Best Paper Award Finalist on Multi-Robot Systems at ICRA 2025**</span>!
 <!-- <table style="width:100%; text-align:center;">
   <tr>
     <td><img src="https://github.com/HyPAIR/Heterogeneous-formation-controller/blob/main/Figures/gazebo1%20(1).png" alt="Image 1" width="352" height="200"></td>
