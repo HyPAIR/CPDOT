@@ -6,6 +6,7 @@ Weijian Zhang, Charlie Street, Masoumeh Mansouri
 University of Birmingham
 
 <a href="https://ieeexplore.ieee.org/document/11128313"><img alt="Paper" src="https://img.shields.io/badge/Paper-IEEE%20Xplore-pink"/></a>
+<a href="https://2025.ieee-icra.org/wp-content/uploads/2025/05/2025-ICRA-Awards-Ceremony-Brochure-conference-awards-only.pdf"><img alt="Video" src="https://img.shields.io/badge/ICRA%202025-Award Finalist-red"/></a>
 <a href="https://youtu.be/DvEniLKDaH0"><img alt="Video" src="https://img.shields.io/badge/Video-Youtube-red"/></a>
 </div>
 
