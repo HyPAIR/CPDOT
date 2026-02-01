@@ -141,7 +141,7 @@ Launch the control node:
 
 A simulation and real-world experiments video demonstrating our proposed framework can be found at [bilibili](https://www.bilibili.com/video/BV1BV4sesEKX/?spm_id_from=333.1387.list.card_archive.click&vd_source=bf49c74265570abfae0e3bacc588f839)/[youtube](https://www.youtube.com/watch?v=DvEniLKDaH0&t=2s).
 
-### Citation
+## Citation
 
 If you find this work useful, please cite ([paper](https://ieeexplore.ieee.org/document/11128313)):
 
