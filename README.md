@@ -42,6 +42,8 @@ Our paper has been selected as the **Best Conference Paper Award Finalist & Best
  - A heuristic path exploration method that efficiently evaluates a set of homotopically distinct solution spaces for the formation.
  
  - A two-stage iterative motion planning framework for finding locally time-optimal collision-free formation trajectories using a deformable sheet.
+ 
+ - ❗ **More efficient implementation of this work can be foune [here](https://github.com/SimonZhang1999/ego_swarm_vvcm).**
 
 ## Requirements
 
